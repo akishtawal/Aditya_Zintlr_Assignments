@@ -116,7 +116,7 @@ results = []
 for company in top20:
   results.append(pageScrapper(company))
 
-with open("detailedReport.txt", "w") as file:
+with open("Task-2_OutputList.txt", "w") as file:
   for obj in results:
     file.write(json.dumps(obj) + "\n")
 

@@ -49,7 +49,7 @@ while "background-color: rgb(220, 0, 0); opacity: 0.25;" not in button.get_attri
   
   button.click()
 
-with open("list.txt", "w") as file:
+with open("Task-1_OutputList.txt", "w") as file:
   for obj in companyList:
     file.write(json.dumps(obj) + "\n")
 
